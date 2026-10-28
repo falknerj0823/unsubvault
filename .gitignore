@@ -1,0 +1,17 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+node_modules/
+dist/
+.DS_Store
+*.egg-info/
+.env.*
+!.env.example
+*.sql
+*.dump
+*.pem
+*.key
+*.log
+backups/

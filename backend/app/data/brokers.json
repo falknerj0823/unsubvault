@@ -1,0 +1,311 @@
+{
+ "checked_at": "2026-10-28",
+ "brokers": [
+  {
+   "id": "ca-drop",
+   "name": "California DROP: one request to every registered broker",
+   "category": "california",
+   "method": "state site",
+   "url": "https://consumer.drop.privacy.ca.gov/",
+   "recheck_months": 12,
+   "sender_domains": [
+    "privacy.ca.gov",
+    "ca.gov"
+   ],
+   "link_check": "ok",
+   "notes": "For California residents. You verify and submit one deletion request on the state's own site, and it goes to every data broker registered in California. You do this yourself; UnsubVault never sees it. Check the site for how and when brokers process it."
+  },
+  {
+   "id": "spokeo",
+   "name": "Spokeo",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.spokeo.com/optout",
+   "recheck_months": 6,
+   "sender_domains": [
+    "spokeo.com"
+   ],
+   "link_check": "ok",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "whitepages",
+   "name": "Whitepages",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.whitepages.com/suppression-requests",
+   "recheck_months": 6,
+   "sender_domains": [
+    "whitepages.com"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "beenverified",
+   "name": "BeenVerified",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.beenverified.com/svc/optout/search/",
+   "recheck_months": 6,
+   "sender_domains": [
+    "beenverified.com"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "intelius",
+   "name": "Intelius (also covers ZabaSearch, US Search)",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.intelius.com/opt-out",
+   "recheck_months": 6,
+   "sender_domains": [
+    "intelius.com",
+    "ussearch.com",
+    "zabasearch.com"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "radaris",
+   "name": "Radaris",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://radaris.com/control/privacy",
+   "recheck_months": 6,
+   "sender_domains": [
+    "radaris.com"
+   ],
+   "link_check": "ok",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "truepeoplesearch",
+   "name": "TruePeopleSearch",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.truepeoplesearch.com/removal",
+   "recheck_months": 6,
+   "sender_domains": [
+    "truepeoplesearch.com"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "fastpeoplesearch",
+   "name": "FastPeopleSearch",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.fastpeoplesearch.com/removal",
+   "recheck_months": 6,
+   "sender_domains": [
+    "fastpeoplesearch.com"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "thatsthem",
+   "name": "That's Them",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://thatsthem.com/optout",
+   "recheck_months": 6,
+   "sender_domains": [
+    "thatsthem.com"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "peoplefinders",
+   "name": "PeopleFinders",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.peoplefinders.com/opt-out",
+   "recheck_months": 6,
+   "sender_domains": [
+    "peoplefinders.com"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "instantcheckmate",
+   "name": "Instant Checkmate",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.instantcheckmate.com/opt-out/",
+   "recheck_months": 6,
+   "sender_domains": [
+    "instantcheckmate.com"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "truthfinder",
+   "name": "TruthFinder",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.truthfinder.com/opt-out/",
+   "recheck_months": 6,
+   "sender_domains": [
+    "truthfinder.com"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "mylife",
+   "name": "MyLife",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.mylife.com/privacy-policy/",
+   "recheck_months": 6,
+   "sender_domains": [
+    "mylife.com"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "peekyou",
+   "name": "PeekYou",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.peekyou.com/about/contact/optout/",
+   "recheck_months": 6,
+   "sender_domains": [
+    "peekyou.com"
+   ],
+   "link_check": "ok",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "usphonebook",
+   "name": "USPhoneBook",
+   "category": "people_search",
+   "method": "web form",
+   "url": "https://www.usphonebook.com/removal",
+   "recheck_months": 6,
+   "sender_domains": [
+    "usphonebook.com"
+   ],
+   "link_check": "ok",
+   "notes": "Find your own listing on the site first, then paste its page address into the opt-out form. Expect a confirmation email. These sites often re-add people, so re-check in a few months."
+  },
+  {
+   "id": "acxiom",
+   "name": "Acxiom",
+   "category": "marketing_data",
+   "method": "web form",
+   "url": "https://isapps.acxiom.com/optout/optout.aspx",
+   "recheck_months": 12,
+   "sender_domains": [
+    "acxiom.com"
+   ],
+   "link_check": "ok",
+   "notes": "A large marketing-data broker that sells lists used for mail and email targeting."
+  },
+  {
+   "id": "lexisnexis",
+   "name": "LexisNexis consumer portal",
+   "category": "marketing_data",
+   "method": "web form",
+   "url": "https://consumer.risk.lexisnexis.com/opt",
+   "recheck_months": 12,
+   "sender_domains": [
+    "lexisnexis.com",
+    "risk.lexisnexis.com"
+   ],
+   "link_check": "ok",
+   "notes": "Risk and identity data used by employers, insurers and others. Use the portal to see and limit what is shared."
+  },
+  {
+   "id": "liveramp",
+   "name": "LiveRamp",
+   "category": "marketing_data",
+   "method": "web form",
+   "url": "https://liveramp.com/privacy",
+   "recheck_months": 12,
+   "sender_domains": [
+    "liveramp.com"
+   ],
+   "link_check": "ok",
+   "notes": "Advertising data matching. Use the opt-out section on its privacy page."
+  },
+  {
+   "id": "experian-marketing",
+   "name": "Experian marketing opt-out",
+   "category": "marketing_data",
+   "method": "web form",
+   "url": "https://www.experian.com/privacy/opting_out",
+   "recheck_months": 12,
+   "sender_domains": [
+    "experian.com"
+   ],
+   "link_check": "ok",
+   "notes": "Limits Experian's use of your data for marketing lists. Separate from your credit file."
+  },
+  {
+   "id": "optoutprescreen",
+   "name": "OptOutPrescreen (credit card and insurance offers)",
+   "category": "mail_calls",
+   "method": "web form",
+   "url": "https://www.optoutprescreen.com/",
+   "recheck_months": 60,
+   "sender_domains": [
+    "optoutprescreen.com",
+    "consumerreports.org"
+   ],
+   "link_check": "blocks_bots",
+   "notes": "The official way to stop prescreened credit and insurance offers in the mail. You can opt out for five years or permanently."
+  },
+  {
+   "id": "dmachoice",
+   "name": "DMAchoice (junk mail)",
+   "category": "mail_calls",
+   "method": "web form",
+   "url": "https://www.dmachoice.org/",
+   "recheck_months": 36,
+   "sender_domains": [
+    "dmachoice.org",
+    "thedma.org"
+   ],
+   "link_check": "ok",
+   "notes": "Reduces catalog and advertising mail from participating marketers."
+  },
+  {
+   "id": "donotcall",
+   "name": "National Do Not Call Registry",
+   "category": "mail_calls",
+   "method": "web form",
+   "url": "https://www.donotcall.gov/",
+   "recheck_months": 120,
+   "sender_domains": [
+    "donotcall.gov",
+    "ftc.gov"
+   ],
+   "link_check": "ok",
+   "notes": "Stops most telemarketing calls to your number. Scammers ignore it, but legitimate marketers must honor it."
+  },
+  {
+   "id": "hibp",
+   "name": "Have I Been Pwned: check where your email leaked",
+   "category": "tools",
+   "method": "tool",
+   "url": "https://haveibeenpwned.com/",
+   "recheck_months": 6,
+   "sender_domains": [
+    "haveibeenpwned.com"
+   ],
+   "link_check": "ok",
+   "notes": "Not a removal. Shows which known data breaches include your email address, which is the most likely source of the spam in your Junk folder. Consider signing up for its breach alerts."
+  }
+ ]
+}

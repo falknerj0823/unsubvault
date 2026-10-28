@@ -1,0 +1,20 @@
+fastapi==0.143.1
+uvicorn[standard]==0.54.0
+sqlalchemy==2.0.35
+alembic==1.13.3
+psycopg2-binary==2.9.9
+pydantic-settings==2.5.2
+celery==5.4.0
+redis==5.1.0
+imapclient==3.0.1
+httpx==0.28.1
+beautifulsoup4==4.12.3
+openai==1.51.0
+anthropic==0.34.2
+msal==1.39.0
+cryptography==50.0.2
+dnspython==2.7.0
+# transitive pins kept explicit for security fixes
+starlette==1.8.0
+httpcore==1.0.9
+h11==0.16.0

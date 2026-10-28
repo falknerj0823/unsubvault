@@ -1,0 +1,12 @@
+# Optional override for the ChatGPT-subscription (Codex CLI) provider.
+# Mounts your Codex login into the backend and worker containers.
+#   1. codex login            (on your machine, once)
+#   2. INSTALL_AI_CLIS=true docker compose -f docker-compose.yml -f docker-compose.cli.yml up --build
+# This gives the containers access to your ChatGPT login: only use it on a machine you trust.
+services:
+  backend:
+    volumes:
+      - ${HOME}/.codex:/root/.codex
+  worker:
+    volumes:
+      - ${HOME}/.codex:/root/.codex
