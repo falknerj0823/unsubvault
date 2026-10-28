@@ -31,6 +31,10 @@ Add a test for behavior you change. Tests are plain scripts that print `PASS`/`F
 2. Add or fix the entry (fields are documented by `scripts/check_catalog.py`). No affiliate or tracking parameters, no links inside `notes`.
 3. Update `checked_at`, run `python scripts/check_catalog.py`, and say in the pull request how you verified the link.
 
+## Documentation
+
+Docs live in `docs/` (start at `docs/README.md`). `docs/reference.md` is generated from the code: after changing a route, table, setting, audit event or `.env.example`, regenerate it (command in `docs/runbooks/maintaining.md`); CI fails if it is stale. Keep examples generic: no real addresses, names or tokens.
+
 ## Ground rules
 
 - **Never log or store secrets, email content or personal details** beyond what a feature needs. Say what a feature stores in the pull request.

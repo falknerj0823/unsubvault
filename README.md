@@ -92,6 +92,10 @@ docker-compose.yml, .env.example
 
 The `worker` container is a Celery stub for future background jobs; scans currently run inside the API process.
 
+## Documentation
+
+Start at [docs/README.md](docs/README.md): [architecture](docs/architecture.md), [security model](docs/security-model.md), [design decisions](docs/decisions.md), [operations](docs/runbooks/operations.md) and [troubleshooting](docs/runbooks/troubleshooting.md) runbooks, [running on a NAS or home server](docs/home-server.md), [testing](docs/testing.md), [maintaining the project](docs/runbooks/maintaining.md), and the generated [reference](docs/reference.md).
+
 ## Development and tests
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). In short:
