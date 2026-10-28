@@ -6,7 +6,9 @@ updates:
     schedule: {interval: monthly}
     open-pull-requests-limit: 2
     groups: {python: {patterns: ["*"]}}
-    ignore: [{dependency-name: "*", update-types: ["version-update:semver-major"]}]
+    # Python libraries here are pre-1.0 or move fast (SQLAlchemy 2.1 and the LLM SDKs broke the app in CI), so only patch releases
+    # arrive automatically. Minor and major upgrades are done by hand after running the full test suite.
+    ignore: [{dependency-name: "*", update-types: ["version-update:semver-major", "version-update:semver-minor"]}]
   - package-ecosystem: npm
     directory: /frontend
     schedule: {interval: monthly}

@@ -19,7 +19,10 @@ def setup() -> None:
         cur.execute(f"CREATE DATABASE {TEST_DB}")
     conn.close()
     os.environ["DATABASE_URL"] = f"{base}/{TEST_DB}"
-    subprocess.run(["alembic", "upgrade", "head"], check=True, capture_output=True)
+    r = subprocess.run(["alembic", "upgrade", "head"], capture_output=True, text=True)
+    if r.returncode != 0:  # show WHY (a dependency upgrade that breaks migrations looks like a bare crash otherwise)
+        print((r.stdout + r.stderr)[-2500:])
+        raise SystemExit("alembic upgrade head failed")
 
 def teardown() -> None:
     """Drop the throwaway database (called by run_all after the last test)."""
