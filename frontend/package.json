@@ -7,7 +7,7 @@
     "react": "^18.3.1", "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "@tanstack/react-query": "^5.56.2",
-    "axios": "^1.7.7", "marked": "14.1.2", "lucide-react": "^0.446.0", "clsx": "^2.1.1"
+    "axios": "^1.7.7", "marked": "14.1.4", "lucide-react": "^0.446.0", "clsx": "^2.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.9", "@types/react-dom": "^18.3.0",
