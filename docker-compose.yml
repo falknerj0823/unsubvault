@@ -1,5 +1,6 @@
 services:
   db:
+    restart: unless-stopped
     image: postgres:16-alpine
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
@@ -14,6 +15,7 @@ services:
       retries: 10
 
   redis:
+    restart: unless-stopped
     image: redis:7-alpine
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
@@ -22,6 +24,7 @@ services:
       retries: 10
 
   backend:
+    restart: unless-stopped
     build:
       context: ./backend
       args:
@@ -42,6 +45,7 @@ services:
       start_period: 30s
 
   worker:
+    restart: unless-stopped
     build:
       context: ./backend
       args:
@@ -57,9 +61,10 @@ services:
         condition: service_healthy
 
   frontend:
+    restart: unless-stopped
     build: ./frontend
     ports:
-      - "127.0.0.1:3000:80"   # loopback only; put a TLS reverse proxy in front to expose it beyond this machine
+      - "${BIND_ADDRESS:-127.0.0.1}:${PORT:-3000}:80"   # loopback only by default; see docs/home-server.md before changing BIND_ADDRESS
     depends_on:
       backend:
         condition: service_healthy

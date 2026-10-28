@@ -54,7 +54,7 @@ Open **http://localhost:3000**, sign in, and follow **Guides** in the sidebar:
 2. **Settings → LLM**: pick a provider. Local Ollama keeps everything on your machine.
 3. **Scan**, then **Review**. Dry-run mode is on by default, so nothing is sent until you turn it off in Settings.
 
-The app listens on `127.0.0.1` only. To reach it from other devices, put a TLS reverse proxy in front of it and add your own access control.
+The app listens on `127.0.0.1` only. To run it on a home server or NAS and reach it from other devices, follow [docs/home-server.md](docs/home-server.md) (HTTPS reverse proxy, Microsoft redirect address, moving an existing install).
 
 ## Choosing an AI model
 
